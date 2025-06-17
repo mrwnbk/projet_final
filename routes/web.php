@@ -11,6 +11,9 @@ Route::get('/', [ArticleController::class, 'index']);
 Route::middleware([ForAdmin::class])->group(function () {
     Route::get('/article/create', [ArticleController::class, 'create']);
     Route::post('/article/post', [ArticleController::class, 'store']);
+    Route::get('/article/edit/{id}', [ArticleController::class, 'edit']);
+    Route::put('/article/update/{id}', [ArticleController::class, 'update']);
+    Route::delete('/article/delete/{id}', [ArticleController::class, 'destroy']);
 
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });
