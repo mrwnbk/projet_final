@@ -10,7 +10,7 @@ export default function Register() {
         password_confirmation: ''
     })
 
-    const enregistrer = (e) => {
+    const ajouter = (e) => {
         e.preventDefault()
         router.post('register', values)
     }
@@ -23,13 +23,13 @@ export default function Register() {
                 <button className="border p-2 rounded-2xl cursor-pointer">Back</button>
             </Link>
 
-            <form onSubmit={enregistrer} className="max-w-md mx-auto p-4 shadow-md rounded-lg space-y-4">
+            <form onSubmit={ajouter} className="max-w-md mx-auto p-4 shadow-md rounded-lg space-y-4">
                 <div>
                     <label className="block text-sm font-medium mb-1">Nom</label>
                     <input type="text" name="name" onChange={(e) => setValues({ ...values, name: e.target.value })}
                         className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 </div>
-                
+
                 <div>
                     <label className="block text-sm font-medium mb-1">Email</label>
                     <input type="text" name="email" onChange={(e) => setValues({ ...values, email: e.target.value })}
