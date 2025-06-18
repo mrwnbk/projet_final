@@ -9,7 +9,7 @@ export default function MyLayout({ children }: MyLayoutProps) {
     return (
         <div className="min-h-screen bg-gray-100">
             <Navbar />
-            <main className="container mx-auto px-4 py-8">
+            <main className="py-18">
                 {children}
             </main>
         </div>

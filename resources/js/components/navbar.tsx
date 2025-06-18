@@ -15,14 +15,15 @@ export default function Navbar() {
                     Foot<span className="text-gray-800">Actu</span>
                 </Link>
 
+                <ul className="hidden md:flex space-x-10 text-gray-700 font-medium text-base">
+                    <Link href="/" className="hover:text-green-600 transition duration-300">Accueil</Link>
+                    <Link href="#articles" className="hover:text-green-600 transition duration-300">Actualités</Link>
+                    <Link href="#" className="hover:text-green-600 transition duration-300">Clubs</Link>
+                    <Link href="#" className="hover:text-green-600 transition duration-300">Résultats</Link>
+                </ul>
+                
                 {auth.user ? (
                     <>
-                        <ul className="hidden md:flex space-x-10 text-gray-700 font-medium text-base">
-                            <Link href="/" className="hover:text-green-600 transition duration-300">Accueil</Link>
-                            <Link href="#" className="hover:text-green-600 transition duration-300">Actualités</Link>
-                            <Link href="#" className="hover:text-green-600 transition duration-300">Clubs</Link>
-                            <Link href="#" className="hover:text-green-600 transition duration-300">Résultats</Link>
-                        </ul>
 
                         <div className="flex gap-3 items-center">
                             <Link href="/dashboard">
