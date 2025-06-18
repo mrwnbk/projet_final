@@ -4,9 +4,9 @@ import { Link } from "@inertiajs/react";
 export default function DetailArticle({ article }) {
     return (
         <MyLayout>
-            <div className="pt-18 bg-gray-100 min-h-screen">
-                <div className="mb-6">
-                    <Link href="/" className="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded transition duration-300">
+            <div className="pt-8 bg-gray-100 min-h-screen">
+                <div className="mb-6 ml-5">
+                    <Link href="/#articles" className="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded transition duration-300">
                         ← Retour
                     </Link>
                 </div>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreArticleRequest;
 use App\Http\Requests\UpdateArticleRequest;
 use App\Models\Article;
+use App\Models\Categorie;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -24,7 +25,8 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return Inertia::render('create_article');
+        $categories = Categorie::all();
+        return Inertia::render('create_article', ['categories' => $categories]);
     }
 
     /**
@@ -37,6 +39,7 @@ class ArticleController extends Controller
         $article->description = $request->description;
         $article->image = $request->image;
         $article->user_id = $request->user_id;
+        $article->categorie_id = $request->categorie_id;
         $article->save();
     }
 

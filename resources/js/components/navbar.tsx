@@ -18,19 +18,22 @@ export default function Navbar() {
                 <ul className="hidden md:flex space-x-10 text-gray-700 font-medium text-base">
                     <Link href="/" className="hover:text-green-600 transition duration-300">Accueil</Link>
                     <Link href="#articles" className="hover:text-green-600 transition duration-300">Actualités</Link>
-                    <Link href="#" className="hover:text-green-600 transition duration-300">Clubs</Link>
-                    <Link href="#" className="hover:text-green-600 transition duration-300">Résultats</Link>
+                    <Link href="#" className="hover:text-green-600 transition duration-300">Dérnieres Infos</Link>
+                    <Link href="#" className="hover:text-green-600 transition duration-300">Transferts</Link>
                 </ul>
-                
+
                 {auth.user ? (
                     <>
 
                         <div className="flex gap-3 items-center">
-                            <Link href="/dashboard">
-                                <button className="bg-green-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-green-600 transition duration-300 cursor-pointer">
-                                    Dashboard
-                                </button>
-                            </Link>
+                            {auth.user.role_id === 1 
+                            ? (
+                                    <Link href="/dashboard">
+                                        <button className="bg-green-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-green-600 transition duration-300 cursor-pointer">
+                                            Dashboard
+                                        </button>
+                                    </Link>
+                                ) : ''}
                             <button
                                 onClick={deco}
                                 className="bg-red-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-red-600 transition duration-300 cursor-pointer">
