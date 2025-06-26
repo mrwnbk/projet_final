@@ -35,6 +35,20 @@ class ArticleSeeder extends Seeder
                 'user_id' => 1,
                 'categorie_id' => 1
             ],
+            [
+                'titre' => "Paul Pogba rejoint l’AS Monaco : un nouveau chapitre s’ouvre",
+                'description' => "Après plusieurs années difficiles marquées par des blessures, des périodes sans club et des épreuves personnelles, notamment des tensions familiales qui ont profondément affecté sa vie, Paul Pogba signe un contrat ambitieux avec l’AS Monaco jusqu’en 2027. Déterminé à relancer sa carrière et à retrouver son meilleur niveau, il espère aussi redorer son image et retrouver une valeur sportive à la hauteur de son talent. Ce nouveau chapitre à Monaco symbolise pour lui une renaissance pleine d’espoir, pour le plus grand plaisir des supporters.",
+                'image' => "/images/paulpogba.jpg",
+                'user_id' => 1,
+                'categorie_id' => 2
+            ],
+            [
+                'titre' => "Le Maroc accueille la CAN 2025 ",
+                'description' => "Le Maroc se prépare à accueillir la Coupe d'Afrique des Nations (CAN) 2025, un événement majeur du football continental qui promet de rassembler les meilleures équipes d’Afrique dans un cadre moderne et dynamique. Fort de ses infrastructures sportives de pointe et de son expérience dans l’organisation de grands événements, le Royaume ambitionne de faire de cette édition un véritable succès, alliant passion sportive et hospitalité chaleureuse. La CAN 2025 au Maroc représente une formidable opportunité pour le pays de renforcer son rayonnement sportif et économique à l’échelle internationale, tout en offrant aux fans un spectacle exceptionnel.",
+                'image' => "/images/canmaroc.png",
+                'user_id' => 1,
+                'categorie_id' => 1
+            ],
         ]);
     }
 }

@@ -18,7 +18,8 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             UserSeeder::class,
             CategorieSeeder::class,
-            ArticleSeeder::class
+            ArticleSeeder::class,
+            TageSeeder::class
         ]);
     }
 }

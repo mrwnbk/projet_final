@@ -17,4 +17,12 @@ class Article extends Model
     public function categorie() {
         return $this->belongsTo(Categorie::class, 'categorie_id');
     }
+
+    public function tage() {
+        return $this->belongsToMany(Tage::class, 'article_tages');
+    }
+
+    public function commentaire() {
+        return $this->hasMany(Commentaire::class);
+    }
 }
