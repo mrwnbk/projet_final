@@ -7,7 +7,7 @@ use App\Http\Middleware\ForAdmin;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', [ArticleController::class, 'index']);
+Route::get('/', [ArticleController::class, 'index'])->name('home');
 
 Route::middleware([ForAdmin::class])->group(function () {
     Route::get('/article/create', [ArticleController::class, 'create']);

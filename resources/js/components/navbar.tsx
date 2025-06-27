@@ -17,7 +17,7 @@ export default function Navbar() {
 
                 <ul className="hidden md:flex space-x-10 text-gray-700 font-medium text-base">
                     <Link href="/" className="hover:text-green-600 transition duration-300">Accueil</Link>
-                    <Link href="#articles" className="hover:text-green-600 transition duration-300">Actualités</Link>
+                    <Link href="/#articles" className="hover:text-green-600 transition duration-300">Actualités</Link>
                     <Link href="#" className="hover:text-green-600 transition duration-300">Dérnieres Infos</Link>
                     <Link href="#" className="hover:text-green-600 transition duration-300">Transferts</Link>
                 </ul>
